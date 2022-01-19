@@ -41,7 +41,7 @@ body {
         border-radius: 40px 100px;
         background-color: #fee2f8;
         background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
-        line-height: 1.6;
+        line-height: 1.5;
         border: black;
         border-style: solid;
         border-radius: 40px;
@@ -63,6 +63,8 @@ header {
   background: #95d5b2;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem; }
+  header nav {
+    z-index: 99; }
   header label {
     display: none;
     width: 43px;
@@ -82,16 +84,20 @@ header {
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  z-index: 99; }
   .menu ul li {
+    z-index: 99;
     border-right: 1px solid #fff; }
     .menu ul li:hover {
-      background: rgba(0, 0, 0, 0.3); }
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 99; }
     .menu ul li a {
       display: block;
       padding: 15px 20px;
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      z-index: 99; }
 
 @media only screen and (max-width: 768px) {
   header label {
@@ -193,6 +199,7 @@ header {
 .alquileres1 {
   margin-top: 0; }
   .alquileres1 .galeria-alquileres {
+    z-index: 0;
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));

@@ -3,6 +3,9 @@ body{
     margin: 0;
 }
 header{
+    nav{
+        z-index: 99;
+    }
     width: 100%;
     background: $bg_nav;
     font-family: 'Poppins', sans-serif;
@@ -30,17 +33,21 @@ header{
         padding: 0;
         display: flex;
         justify-content: flex-end;
+        z-index: 99;
         li{
+            z-index: 99;
             border-right: 1px solid #fff;
             // flex-grow: 1;
             &:hover{
                 background: rgba(0,0,0,0.3);
+                z-index: 99;
             }
             a{
                 display: block;
                 padding: 15px 20px;
                 color: #fff;
                 text-decoration: none;
+                z-index: 99;
             }
         }
     }
