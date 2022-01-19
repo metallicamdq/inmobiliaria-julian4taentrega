@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin titulo {
+    background-color: #83c5be;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-size: 35px;
+    padding: 15px;
+}
+
+@mixin cuadrados {
+    background-color: #fee2f8;
+    background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+    line-height: 1.6;
+    border: black;
+    border-style: solid;
+    border-radius: 40px;
+    border-radius: 40px 100px;
+    width: 90%;
+    height: 40%;
+    display: inline-block;
+    margin: 15px;
+}
+
+body {
+    background-color: $bg_body;
+    font-family: 'Poppins', sans-serif;
+
+    p {
+        padding: 25px;
+        text-justify: distribute-all-lines;
+        margin: 0;
+    }
+
+    .titulo-h1 {
+        background-color: #83c5be;
+        color: white;
+        font-family: 'Comfortaa', cursive;
+        text-align: center;
+        font-size: 35px;
+        padding: 15px;
+        border-radius: 40px 100px;
+    }
+
+    .titulo-h2 {
+        @include titulo;
+        font-size: 25px;
+        border-radius: 40px 100px;
+    }
+
+    main {
+        padding-top: 0px;
+        background-color: $bg_body;
+
+        .parrafo-flex {
+            display: flex;
+            justify-content: center;
+            .parrafo-index {
+                justify-content: center;
+                text-align: center;
+                font-size: 1.5rem;
+                font-family: 'Comfortaa', cursive;
+                border-radius: 40px 100px;
+                @include cuadrados;
+                
+            }
+        }
+    }
+}
+
+#body {
+    background-color: $bg_body;
+}

@@ -1,0 +1,141 @@
+/* responsive */
+@media only screen and (max-width: 480px) {
+    .general-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .left {
+        align-self: center;
+    }
+
+    .left img {
+        align-self: center;
+        margin-left: 0;
+    }
+
+    .right {
+        align-self: center;
+    }
+
+    .main-links {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contenedor-general-main {
+        align-content: center;
+
+    }
+
+    .contenedor-formulario {
+        display: flex;
+        justify-content: center;
+    }
+    h4::after{
+        left: 50%;
+    }
+    .third{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .general-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        display: inline-block;
+        align-self: center;
+        text-align: center;
+    }
+
+    .titulo-nav {
+        align-self: center;
+    }
+
+    .right {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-links a {
+        color: black;
+    }
+
+    .main-links a:hover {
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .main-links a {
+        font-size: 3rem;
+    }
+
+    .contenedor-general-main {
+        flex-direction: column;
+    }
+
+    .cuadrados {
+        flex-direction: column;
+        .cuadrado1 {
+            width: 100%;
+        }
+    
+        .cuadrado2 {
+            width: 100%;
+        }
+    
+        .cuadrado3 {
+            width: 100%;
+        }
+    
+        .cuadrado3 img {
+            width: 100%;
+        }
+    }
+    .cartas{
+        flex-direction: column;
+        width: 100%;
+        .card{
+            width: 100%;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .cuadrados {
+        flex-direction: column;
+        .cuadrado1 {
+            width: 100%;
+        }
+    
+        .cuadrado2 {
+            width: 100%;
+        }
+    
+        .cuadrado3 {
+            width: 100%;
+        }
+    }
+    }

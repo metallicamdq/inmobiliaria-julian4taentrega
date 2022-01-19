@@ -1,0 +1,32 @@
+@mixin cuadrados {
+    background-color: #fee2f8;
+    background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+    line-height: 1.6;
+    border: black;
+    border-style: solid;
+    border-radius: 40px 50px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.galeria-propiedad {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(min(30rem), 1fr));
+    grid-auto-rows: auto;
+    padding: 2px;
+    gap: 5px;
+    .gallery-propiedad {
+        display: flex;
+        justify-items: center;
+        position: relative;
+        overflow: hidden;
+        transition: all 500ms ease;
+        border-radius: 5px;
+        box-shadow: 1px 10px 15px rgba(0,0,0,0.50);
+        @include cuadrados;}
+        .descripcion{
+            align-self: center;
+        }
+}

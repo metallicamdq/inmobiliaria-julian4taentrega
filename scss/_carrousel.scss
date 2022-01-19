@@ -1,0 +1,17 @@
+/* Carrousel */
+.carousel-item{
+    display:flex;
+    align-items: center;
+    P{
+        padding: 5px;
+        background-color: #fffb;
+        font-size: 3rem;
+        display: inline-block;
+    
+    }
+    img { 
+        height: 750px; 
+        object-fit: contain;
+    }
+}
+/* fin carrousel */

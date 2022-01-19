@@ -1,0 +1,120 @@
+/* galeria grid index */
+.gallery-container {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(min(25rem), 1fr));
+    grid-auto-rows: 22rem;
+    padding: 2px;
+    gap: 5px;
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        transition: all 500ms ease;
+        border-radius: 5px;
+        box-shadow: 1px 10px 15px rgba(0,0,0,0.50);
+        img{
+            transition: all 500ms ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            &:hover{
+                transform:scale(1.2);
+                cursor: pointer;
+            }
+        }
+        .gallery-title {
+            position: absolute;
+            bottom: 0;
+            color: white;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 1));
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+/* fin de galeria grid index */
+
+/* galeria compras */
+.galeria-compras {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(min(25rem), 1fr));
+    grid-auto-rows: 22rem;
+    padding: 2px;
+    gap: 5px;
+    .gallery-item {
+        position: inherit;
+        overflow: hidden;
+        transition: all 500ms ease;
+        border-radius: 5px;
+        box-shadow: 1px 10px 15px rgba(0,0,0,0.50);
+        img{
+            transition: all 500ms ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            &:hover{
+                transform:scale(1.2);
+                cursor: pointer;
+            }
+        }
+        .gallery-title {
+            position: sticky;
+            bottom: 0;
+            color: white;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 1));
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+/* fin galeria compras */
+
+/* alquileres galeria */
+.alquileres1 {
+    margin-top: 0;
+    .galeria-alquileres {
+            display: grid;
+            grid-auto-flow: dense;
+            grid-template-columns: repeat(auto-fill, minmax(min(25rem), 1fr));
+            grid-auto-rows: 22rem;
+            padding: 2px;
+            gap: 5px;
+            .gallery-item {
+                position: inherit;
+                overflow: hidden;
+                transition: all 500ms ease;
+                border-radius: 5px;
+                box-shadow: 1px 10px 15px rgba(0,0,0,0.50);
+                img{
+                    transition: all 500ms ease;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    &:hover{
+                        transform:scale(1.2);
+                        cursor: pointer;
+                    }
+                }
+                .gallery-title {
+                    position: sticky;
+                    bottom: 0;
+                    color: white;
+                    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 1));
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+    }
+}
+@media only screen and (max-width:768px){
+    .gallery-item{
+        position: inherit;
+        .gallery-title{
+            position: sticky;
+        }
+    }
+}
+
+/* fin galeria alquileres */
