@@ -6,19 +6,7 @@
 @import "contacto";
 @import "conocenos";
 @import "footer";
-@import "vender";
 @import "cards";
 @import "propiedad";
 @import "mediaquery";
-
-$colores:(
-    xl:blue,
-    l: red,
-    m: rgb(10, 99, 37),
-    s: violet,
-);
-$xl: map-get($colores, xl);
-$xl: map-get($colores, s);
-$xl: map-get($colores, l);
-$xl: map-get($colores, m);
 
