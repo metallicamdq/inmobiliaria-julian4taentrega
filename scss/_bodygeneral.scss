@@ -5,7 +5,7 @@
 }
 
 @mixin titulo {
-    background-color: #83c5be;
+    background-color: #59a5d8;
     color: white;
     font-family: 'Comfortaa', cursive;
     text-align: center;
@@ -38,7 +38,7 @@ body {
     }
 
     .titulo-h1 {
-        background-color: #83c5be;
+        background-color: $bg_titulo;
         color: white;
         font-family: 'Comfortaa', cursive;
         text-align: center;
