@@ -402,6 +402,7 @@ footer {
       display: flex;
       justify-content: center; }
       footer .container-footer .logo img {
+        padding-top: 20px;
         width: 200px;
         align-content: center; }
 
