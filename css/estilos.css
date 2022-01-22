@@ -99,26 +99,6 @@ header {
       text-decoration: none;
       z-index: 99; }
 
-@media only screen and (max-width: 768px) {
-  header label {
-    display: block; }
-  header .menu {
-    position: absolute;
-    background: #023047;
-    margin-left: -70%;
-    transition: all 1s; }
-    header .menu ul {
-      flex-direction: column;
-      width: 100%; }
-      header .menu ul li {
-        border-top: 1px solid #fff; }
-  #btn-menu:checked ~ .menu {
-    margin: 0; }
-  .gallery-item {
-    position: inherit; }
-    .gallery-item .gallery-title {
-      position: sticky; } }
-
 /* Carrousel */
 .carousel-item {
   display: flex;
@@ -228,12 +208,6 @@ header {
         width: 100%;
         text-align: center; }
 
-@media only screen and (max-width: 768px) {
-  .gallery-item {
-    position: inherit; }
-    .gallery-item .gallery-title {
-      position: sticky; } }
-
 /* fin galeria alquileres */
 /* contacto */
 .contact-parent {
@@ -296,18 +270,6 @@ header {
     color: #000;
     transition: 0.2s; }
 
-@media screen and (max-width: 991px) {
-  .contact-parent {
-    display: block;
-    width: 100%; }
-    .contact-parent .child1 {
-      display: none; }
-    .contact-parent .child2 {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
-      background-size: cover; }
-  .inside-contact input, .inside-contact textarea {
-    background-color: #fff; } }
-
 .formulario {
   margin: 30px; }
 
@@ -364,6 +326,8 @@ footer {
       display: flex;
       flex-direction: column;
       padding: 40px; }
+      footer .container-footer .box-footer li {
+        text-decoration: none; }
     footer .container-footer .box-copyright {
       max-width: 1200px;
       margin: auto;
@@ -451,65 +415,7 @@ footer {
     align-self: center; }
 
 /* responsive */
-@media only screen and (max-width: 480px) {
-  .general-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%; }
-  .left {
-    align-self: center; }
-  .left img {
-    align-self: center;
-    margin-left: 0; }
-  .right {
-    align-self: center; }
-  .main-links {
-    text-align: center;
-    justify-content: center; }
-  .contenedor-general-main {
-    align-content: center; }
-  .contenedor-formulario {
-    display: flex;
-    justify-content: center; }
-  h4::after {
-    left: 50%; }
-  .third {
-    text-align: center; } }
-
-@media only screen and (max-width: 600px) {
-  .general-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .flex-container {
-    display: flex;
-    flex-direction: column; }
-  .left {
-    display: inline-block;
-    align-self: center;
-    text-align: center; }
-  .titulo-nav {
-    align-self: center; }
-  .right {
-    display: inline-block;
-    display: flex;
-    justify-content: center; }
-  .main-links a {
-    color: black; }
-  .main-links a:hover {
-    border-radius: 5px;
-    padding: 5px; } }
-
 @media only screen and (max-width: 768px) {
-  .main-links a {
-    font-size: 3rem; }
-  .contenedor-general-main {
-    flex-direction: column; }
   .cuadrados {
     flex-direction: column; }
     .cuadrados .cuadrado1 {
@@ -524,7 +430,44 @@ footer {
     flex-direction: column;
     width: 100%; }
     .cartas .card {
-      width: 100%; } }
+      width: 100%; }
+  footer .container-footer .box-footer {
+    padding: 15px; }
+  header label {
+    display: block; }
+  header .menu {
+    position: absolute;
+    background: #023047;
+    margin-left: -70%;
+    transition: all 1s; }
+    header .menu ul {
+      flex-direction: column;
+      width: 100%; }
+      header .menu ul li {
+        border-top: 1px solid #fff; }
+  #btn-menu:checked ~ .menu {
+    margin: 0; }
+  .gallery-item {
+    position: inherit; }
+    .gallery-item .gallery-title {
+      position: sticky; }
+  .gallery-item {
+    position: inherit; }
+    .gallery-item .gallery-title {
+      position: sticky; } }
+
+@media screen and (max-width: 991px) {
+  .contact-parent {
+    display: block;
+    width: 100%; }
+    .contact-parent .child1 {
+      display: none; }
+    .contact-parent .child2 {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
+      background-size: cover; }
+  .inside-contact input,
+  .inside-contact textarea {
+    background-color: #fff; } }
 
 @media only screen and (max-width: 1024px) {
   .cuadrados {

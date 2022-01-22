@@ -20,6 +20,9 @@ footer {
             display: flex;
             flex-direction: column;
             padding: 40px;
+            li{
+                text-decoration: none;
+            }
             }
             .box-copyright{
                 max-width: 1200px;
@@ -33,7 +36,7 @@ footer {
                 hr{
                     border: none;
                     height: 1px;
-                    color: black    ;
+                    color: black;
                 }
             }
             a{
