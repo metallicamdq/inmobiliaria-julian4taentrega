@@ -115,7 +115,8 @@ header {
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   grid-auto-rows: 22rem;
   padding: 2px;
-  gap: 5px; }
+  gap: 5px;
+  margin: 5px; }
   .gallery-container .gallery-item {
     position: relative;
     overflow: hidden;
@@ -146,7 +147,8 @@ header {
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   grid-auto-rows: 22rem;
   padding: 2px;
-  gap: 5px; }
+  gap: 5px;
+  margin: 5px; }
   .galeria-compras .gallery-item {
     position: inherit;
     overflow: hidden;
@@ -180,7 +182,8 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-auto-rows: 22rem;
     padding: 2px;
-    gap: 5px; }
+    gap: 5px;
+    margin: 5px; }
     .alquileres1 .galeria-alquileres .gallery-item {
       position: inherit;
       overflow: hidden;
