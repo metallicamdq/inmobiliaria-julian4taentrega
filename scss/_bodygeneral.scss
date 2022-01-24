@@ -14,8 +14,8 @@
 }
 
 @mixin cuadrados {
-    background-color: #fee2f8;
-    background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+    background-color: #6a93cb;
+    background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
     line-height: 1.5;
     border: black;
     border-style: solid;
@@ -60,6 +60,7 @@ body {
         .parrafo-flex {
             display: flex;
             justify-content: center;
+
             .parrafo-index {
                 justify-content: center;
                 text-align: center;
@@ -67,12 +68,9 @@ body {
                 font-family: 'Comfortaa', cursive;
                 border-radius: 40px 100px;
                 @include cuadrados;
-                
+
             }
         }
     }
-}
-
-#body {
-    background-color: $bg_body;
+    
 }

@@ -22,32 +22,32 @@ header{
             background: rgba(0,0,0,0.3);
         }
     }
-}
-#btn-menu{
-    display: none;
-}
-.menu{
-    ul{
-        margin: 0;
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: flex-end;
-        z-index: 99;
-        li{
+    #btn-menu{
+        display: none;
+    }
+    .menu{
+        ul{
+            margin: 0;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
             z-index: 99;
-            border-right: 1px solid #fff;
-            // flex-grow: 1;
-            &:hover{
-                background: rgba(0,0,0,0.3);
+            li{
                 z-index: 99;
-            }
-            a{
-                display: block;
-                padding: 15px 20px;
-                color: #fff;
-                text-decoration: none;
-                z-index: 99;
+                border-right: 1px solid #fff;
+                // flex-grow: 1;
+                &:hover{
+                    background: rgba(0,0,0,0.3);
+                    z-index: 99;
+                }
+                a{
+                    display: block;
+                    padding: 15px 20px;
+                    color: #fff;
+                    text-decoration: none;
+                    z-index: 99;
+                }
             }
         }
     }

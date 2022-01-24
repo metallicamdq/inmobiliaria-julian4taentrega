@@ -39,8 +39,8 @@ body {
         font-size: 1.5rem;
         font-family: 'Comfortaa', cursive;
         border-radius: 40px 100px;
-        background-color: #fee2f8;
-        background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+        background-color: #6a93cb;
+        background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
         line-height: 1.5;
         border: black;
         border-style: solid;
@@ -50,9 +50,6 @@ body {
         height: 40%;
         display: inline-block;
         margin: 15px; }
-
-#body {
-  background-color: #bde0fe; }
 
 /* navegacion*/
 body {
@@ -75,29 +72,27 @@ header {
     header label:hover {
       cursor: pointer;
       background: rgba(0, 0, 0, 0.3); }
-
-#btn-menu {
-  display: none; }
-
-.menu ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  z-index: 99; }
-  .menu ul li {
-    z-index: 99;
-    border-right: 1px solid #fff; }
-    .menu ul li:hover {
-      background: rgba(0, 0, 0, 0.3);
-      z-index: 99; }
-    .menu ul li a {
-      display: block;
-      padding: 15px 20px;
-      color: #fff;
-      text-decoration: none;
-      z-index: 99; }
+  header #btn-menu {
+    display: none; }
+  header .menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99; }
+    header .menu ul li {
+      z-index: 99;
+      border-right: 1px solid #fff; }
+      header .menu ul li:hover {
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 99; }
+      header .menu ul li a {
+        display: block;
+        padding: 15px 20px;
+        color: #fff;
+        text-decoration: none;
+        z-index: 99; }
 
 /* Carrousel */
 .carousel-item {
@@ -281,8 +276,8 @@ header {
     font-family: 'Comfortaa', cursive;
     font-size: 20px; }
   .cuadrados .cuadrado1 {
-    background-color: #fee2f8;
-    background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+    background-color: #6a93cb;
+    background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
     line-height: 1.6;
     border: black;
     border-style: solid;
@@ -298,9 +293,12 @@ header {
     padding: 10px;
     margin: 10px;
     text-align: center;
-    background-color: #cdedfd;
-    background-image: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%);
+    background-color: #6a93cb;
+    background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
     font-family: 'Comfortaa', cursive; }
+    .cuadrados .cuadrado3 h2 {
+      font-family: 'Comfortaa', cursive;
+      font-size: 20px; }
 
 /* fin conocenos */
 footer {
