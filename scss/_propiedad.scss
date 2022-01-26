@@ -9,6 +9,8 @@
     width: 100%;
     height: 100%;
     display: inline-block;
+    margin: 5px;
+    padding: 15px;
 }
 .galeria-propiedad {
     display: grid;
@@ -18,14 +20,20 @@
     grid-auto-rows: auto;
     padding: 2px;
     gap: 5px;
+    margin: 15px;
+    padding-bottom: 20px;
     .gallery-propiedad {
         display: flex;
+        flex-direction: row;
         justify-items: center;
         position: relative;
         overflow: hidden;
         transition: all 500ms ease;
         border-radius: 5px;
         box-shadow: 1px 10px 15px rgba(0,0,0,0.50);
+        iframe{
+            border-radius: 15px;
+        }
         @include cuadrados;}
         .descripcion{
             align-self: center;

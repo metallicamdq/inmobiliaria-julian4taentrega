@@ -21,41 +21,30 @@ footer {
             display: flex;
             flex-direction: column;
             padding: 40px;
-            li{
+
+            li {
                 text-decoration: none;
             }
-            }
-            .box-copyright{
-                max-width: 1200px;
-                margin:auto;
-                text-align: center;
-                padding: 0px 40px;
-                p{
-                    margin-top: 20px ;
-                    color:black;
-                }
-                hr{
-                    border: none;
-                    height: 1px;
-                    color: black;
-                }
-            }
-            a{
+
+
+            a {
                 margin-top: 10px;
                 color: black;
                 font-weight: 600;
                 text-decoration: none;
-                &:hover{
+
+                &:hover {
                     opacity: 0.9;
                 }
-                .fab{
+
+                .fab {
                     font-size: 20px;
                 }
             }
 
             h2 {
                 margin-bottom: 30px;
-                color:black;
+                color: black;
                 font-weight: 700;
             }
 
@@ -65,7 +54,8 @@ footer {
                 font-weight: 500;
                 color: black;
                 font-size: 12px;
-                p{
+
+                p {
                     text-align: center;
                     justify-content: center;
                 }
@@ -74,12 +64,37 @@ footer {
             .logo {
                 display: flex;
                 justify-content: center;
+
                 img {
                     padding-top: 20px;
                     width: 200px;
                     align-content: center;
-                    
+
                 }
+            }
+
+            .fab {
+                padding: 5px;
+            }
+        }
+        .box-copyright {
+            justify-content: center;
+            align-content: center;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+            padding: 0px 40px;
+
+            p {
+                margin-top: 20px;
+                color: black;
+            }
+
+            hr {
+                border: none;
+                height: 1px;
+                color: black;
+            }
         }
     }
 }

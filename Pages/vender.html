@@ -57,56 +57,76 @@
             <h2 class="titulo-h1 animate_animated animate__bounceIn">
                 Publica tu propiedad
             </h2>
-            <form class="row g-3 p-3 w-100 ">
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Nombre</label>
-                    <input type="email" class="form-control" placeholder="ingrese su nombre" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Apellido</label>
-                    <input type="password" class="form-control" placeholder="ingrese su apellido" id="inputPassword4">
-                </div>
-                <div class="col-12">
-                    <label for="inputAddress" class="form-label">Dirección</label>
-                    <input type="text" class="form-control" id="inputAddress"
-                        placeholder="Direccion de la propiedad a vender">
-                </div>
-                <label for="inputAddress" class="form-label">Email</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Ingrese su Email">
-                <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Número de telefono</label>
-                    <input type="text" class="form-control" id="inputAddress2"
-                        placeholder="Numero de area sin el 0 y sin el 15">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputCity" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="ciudad">
-                </div>
-                <div class="col-md-4">
-                    <label for="inputState" class="form-label">Provincia</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>Buenos Aires</option>
-                        <option> La Pampa</option>
-                        <option> Catamarca</option>
-                        <option> Jujuy</option>
-                        <option> Cordoba</option>
-                    </select>
-                </div>
-                <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Codigo postal</label>
-                    <input type="text" class="form-control" id="inputZip">
-                </div>
-                <div class="mb-3">
-                    <label for="formFile" class="form-label">seleccione imagenes de su propiedad</label>
-                    <input class="form-control" type="file" id="formFile">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Escribe una breve descripcion de tu
-                        propiedad, como por ejemplo los metros cuadrados, ambientes, etc.</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Enviar datos</button>
+            <form>
+                <div class="container">
+                    <div class="contact-parent">
+                        <div class="contact-child child1">
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i> Direccion <br />
+                                <span> Buenos aires 1655
+                                    <br />
+                                    Buenos aires, ARG
+                                </span>
+                            </p>
+
+                            <p>
+                                <i class="fas fa-phone-alt"></i> Llamanos <br />
+                                <span> 0800-333-444</span>
+                            </p>
+
+                            <p>
+                                <i class=" far fa-envelope"></i> Soporte General <br />
+                                <span>inmobiliariamartinez@gmail.com</span>
+                            </p>
+                        </div>
+
+                        <div class="contact-child child2">
+                            <div class="inside-contact">
+                                <h2>Formulario de venta</h2>
+                                <h3>
+                                    <span id="confirm">
+                                </h3>
+
+                                <p>Nombre *</p>
+                                <input id="txt_name" type="text" Required="required">
+
+                                <p>Apellido *</p>
+                                <input id="txt_name" type="text" Required="required">
+
+                                <p>Email *</p>
+                                <input id="txt_email" type="text" Required="required">
+
+                                <p>Telefono *</p>
+                                <input id="txt_phone" type="text" Required="required">
+
+                                <p>Direccion del Domicilio (a vender) *</p>
+                                <input id="txt_subject" type="text" Required="required">
+
+                                <p>Ciudad *</p>
+                                <input id="txt_subject" type="text" Required="required">
+
+                                <label for="inputState" class="form-label">Provincia</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Buenos Aires</option>
+                                    <option> La Pampa</option>
+                                    <option> Catamarca</option>
+                                    <option> Jujuy</option>
+                                    <option> Cordoba</option>
+                                </select>
+                                <p>Codigo Postal *</p>
+                                <input id="txt_subject" type="text" Required="required">
+
+                                <label for="formFile" class="form-label">Seleccione imagenes de su propiedad *</label>
+                                <input class="form-control" type="file" id="formFile" required="required">
+
+                                <p>Escribe una breve descripcion de tu
+                                    propiedad, como por ejemplo los metros cuadrados, ambientes, etc. *</p>
+                                <textarea id="txt_message" rows="4" cols="20" Required="required"></textarea>
+
+                                <input type="submit" id="btn_send" value="ENVIAR">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </form>
         </section>
