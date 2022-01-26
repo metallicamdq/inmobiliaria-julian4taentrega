@@ -492,9 +492,6 @@ footer {
     width: 90%; }
     .cartas .card {
       width: 100%; }
-  footer .container-footer .box-footer {
-    padding: 15px;
-    margin: auto; }
   header label {
     display: block; }
   header .menu {
@@ -533,7 +530,10 @@ footer {
   body .titulo-h2 {
     width: 90%; }
   .contact-parent .child2 {
-    color: black; } }
+    color: black; }
+  footer .container-footer .box-footer {
+    padding: 15px;
+    margin: 0; } }
 
 @media screen and (max-width: 991px) {
   .contact-parent {
