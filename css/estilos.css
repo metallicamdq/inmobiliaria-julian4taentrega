@@ -17,7 +17,7 @@ body {
     text-align: center;
     font-size: 35px;
     padding: 15px;
-    border-radius: 40px 100px; }
+    border-radius: 0px 0px 20px 20px; }
   body .titulo-h2 {
     background-color: #59a5d8;
     color: white;
@@ -50,6 +50,8 @@ body {
         height: 40%;
         display: inline-block;
         margin: 15px; }
+    body main .background {
+      background-color: white; }
 
 /* navegacion*/
 body {
@@ -228,13 +230,15 @@ header {
       text-align: center;
       font-size: 16px;
       color: #023047; }
-    .contact-parent .contact-child .inside-contact input, .contact-parent .contact-child .inside-contact textarea {
+    .contact-parent .contact-child .inside-contact input,
+    .contact-parent .contact-child .inside-contact textarea {
       width: 100%;
       background-color: #eee;
       border: 1px solid rgba(0, 0, 0, 0.48);
       padding: 5px 10px;
       margin-bottom: 20px; }
-      .contact-parent .contact-child .inside-contact input:hover, .contact-parent .contact-child .inside-contact textarea:hover {
+      .contact-parent .contact-child .inside-contact input:hover,
+      .contact-parent .contact-child .inside-contact textarea:hover {
         background-color: #fff;
         color: #000;
         transition: 0.2s; }
@@ -266,7 +270,8 @@ header {
   .contact-parent .child2 {
     flex-direction: column;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    background-color: #bde0fe; }
 
 /* fin contacto */
 /* conocenos */
