@@ -1,13 +1,13 @@
 /* responsive- mediaquery */
 
 @media only screen and (max-width: 768px) {
+    main{
     .cuadrados {
         flex-direction: column;
-
-        .cuadrado1 {
-            width: 100%;
+        padding: 25px;
+        .formato-p {
+            font-size: 15px;
         }
-
         .cuadrado2 {
             width: 100%;
         }
@@ -20,10 +20,11 @@
             width: 100%;
         }
     }
+}
 
     .cartas {
         flex-direction: column;
-        width: 100%;
+        width: 90%;
 
         .card {
             width: 100%;
@@ -34,6 +35,7 @@
         .container-footer {
             .box-footer {
                 padding: 15px;
+                margin: auto;
             }
         }
     }
@@ -83,13 +85,36 @@
 
     .galeria-propiedad {
         margin: 0 auto;
-        grid-template-columns: repeat(auto-fill, minmax(min(20rem), 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(min(15rem), 1fr));
         grid-auto-rows: auto;
         padding: 2px;
         gap: 5px;
-        margin: 15px;
         padding-bottom: 20px;
     }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    }
+
+    .galeria-compras {
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    }
+
+    .alquileres1 {
+        .galeria-alquileres {
+            grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        }
+    }
+    body{
+        .titulo-h2{
+            width: 90%;
+        }
+    }
+    .contact-parent{
+        .child2{
+            color: black;
+        }
+    } 
 
 }
 

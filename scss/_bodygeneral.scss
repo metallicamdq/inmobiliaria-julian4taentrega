@@ -5,7 +5,7 @@
 }
 
 @mixin titulo {
-    background-color: #59a5d8;
+    background-color: #59a5d893;
     color: white;
     font-family: 'Comfortaa', cursive;
     text-align: center;
@@ -14,11 +14,9 @@
 }
 
 @mixin cuadrados {
-    background-color: #6a93cb;
-    background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+    background-color: rgba(0, 106, 255, 0.308);
+    background-image: linear-gradient(315deg, rgba(68, 67, 67, 0.767), rgba(10, 11, 12, 0.25) 74%);
     line-height: 1.5;
-    border: black;
-    border-style: solid;
     border-radius: 40px;
     border-radius: 40px 100px;
     width: 90%;
@@ -38,7 +36,7 @@ body {
     }
 
     .titulo-h1 {
-        background-color: $bg_titulo;
+        background-color: hsla(225, 34%, 45%, 0.63);
         color: white;
         font-family: 'Comfortaa', cursive;
         text-align: center;
@@ -51,17 +49,26 @@ body {
         @include titulo;
         font-size: 25px;
         border-radius: 40px 100px;
+        width: 50%;
+        margin: auto;
     }
 
     main {
         padding-top: 0px;
-        background-color: $bg_body;
+        background: #0a0a0a;
+            background: linear-gradient(to right, hsla(0, 0%, 2%, 0.849), hsla(240, 1%, 43%, 0.376)), url(https://fondosmil.com/fondo/60032.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
 
         .parrafo-flex {
             display: flex;
             justify-content: center;
 
             .parrafo-index {
+                color: white;
+                font-weight: 800;
                 justify-content: center;
                 text-align: center;
                 font-size: 1.5rem;
@@ -71,9 +78,20 @@ body {
 
             }
         }
-        .background{
+
+        .background {
             background-color: white;
         }
+
+        .section-home {
+            background: #0a0a0a;
+            background: linear-gradient(to right, hsla(0, 0%, 2%, 0.849), hsla(240, 1%, 43%, 0.376)), url(https://fondosmil.com/fondo/60032.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+        }
     }
-    
+
+
 }

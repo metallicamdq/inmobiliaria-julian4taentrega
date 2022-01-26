@@ -3,11 +3,7 @@ footer {
     width: 100%;
     padding: 50px 0px;
     background-size: cover;
-    background-color: #b9e0f1;
-    -webkit-mask-image: url("../Images/background-footer.svg");
-    mask-image: url("../Images/background-footer.svg");
-    -webkit-mask-size: cover;
-    mask-size: cover;
+    background-color: #092546f7;
 
     .container-footer {
         display: flex;
@@ -15,7 +11,7 @@ footer {
         justify-content: space-between;
         max-width: 1200px;
         margin: auto;
-        margin-top: 100px;
+        margin-top: 10px;
 
         .box-footer {
             display: flex;
@@ -29,7 +25,7 @@ footer {
 
             a {
                 margin-top: 10px;
-                color: black;
+                color: white;
                 font-weight: 600;
                 text-decoration: none;
 
@@ -44,7 +40,7 @@ footer {
 
             h2 {
                 margin-bottom: 30px;
-                color: black;
+                color: white;
                 font-weight: 700;
             }
 
@@ -52,7 +48,7 @@ footer {
                 max-width: 350px;
                 margin-top: 20px;
                 font-weight: 500;
-                color: black;
+                color: white;
                 font-size: 12px;
 
                 p {
@@ -87,13 +83,13 @@ footer {
 
             p {
                 margin-top: 20px;
-                color: black;
+                color:white;
             }
 
             hr {
                 border: none;
                 height: 1px;
-                color: black;
+                color:white;
             }
         }
     }

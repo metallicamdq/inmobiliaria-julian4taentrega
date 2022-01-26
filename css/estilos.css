@@ -11,7 +11,7 @@ body {
     text-justify: distribute-all-lines;
     margin: 0; }
   body .titulo-h1 {
-    background-color: #59a5d8;
+    background-color: rgba(76, 95, 154, 0.63);
     color: white;
     font-family: 'Comfortaa', cursive;
     text-align: center;
@@ -19,31 +19,38 @@ body {
     padding: 15px;
     border-radius: 0px 0px 20px 20px; }
   body .titulo-h2 {
-    background-color: #59a5d8;
+    background-color: #59a5d893;
     color: white;
     font-family: 'Comfortaa', cursive;
     text-align: center;
     font-size: 35px;
     padding: 15px;
     font-size: 25px;
-    border-radius: 40px 100px; }
+    border-radius: 40px 100px;
+    width: 50%;
+    margin: auto; }
   body main {
     padding-top: 0px;
-    background-color: #bde0fe; }
+    background: #0a0a0a;
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.849), rgba(109, 109, 111, 0.376)), url(https://fondosmil.com/fondo/60032.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative; }
     body main .parrafo-flex {
       display: flex;
       justify-content: center; }
       body main .parrafo-flex .parrafo-index {
+        color: white;
+        font-weight: 800;
         justify-content: center;
         text-align: center;
         font-size: 1.5rem;
         font-family: 'Comfortaa', cursive;
         border-radius: 40px 100px;
-        background-color: #6a93cb;
-        background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+        background-color: rgba(0, 106, 255, 0.308);
+        background-image: linear-gradient(315deg, rgba(68, 67, 67, 0.767), rgba(10, 11, 12, 0.25) 74%);
         line-height: 1.5;
-        border: black;
-        border-style: solid;
         border-radius: 40px;
         border-radius: 40px 100px;
         width: 90%;
@@ -52,6 +59,13 @@ body {
         margin: 15px; }
     body main .background {
       background-color: white; }
+    body main .section-home {
+      background: #0a0a0a;
+      background: linear-gradient(to right, rgba(5, 5, 5, 0.849), rgba(109, 109, 111, 0.376)), url(https://fondosmil.com/fondo/60032.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: relative; }
 
 /* navegacion*/
 body {
@@ -59,7 +73,7 @@ body {
 
 header {
   width: 100%;
-  background: #023047;
+  background: #092546f7;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem; }
   header nav {
@@ -115,11 +129,10 @@ header {
 .gallery-container {
   display: grid;
   grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   grid-auto-rows: 22rem;
-  padding: 2px;
-  gap: 5px;
-  margin: 5px; }
+  padding: 35px;
+  gap: 5px; }
   .gallery-container .gallery-item {
     position: relative;
     overflow: hidden;
@@ -147,11 +160,10 @@ header {
 .galeria-compras {
   display: grid;
   grid-auto-flow: dense;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   grid-auto-rows: 22rem;
-  padding: 2px;
-  gap: 5px;
-  margin: 5px; }
+  padding: 35px;
+  gap: 5px; }
   .galeria-compras .gallery-item {
     position: inherit;
     overflow: hidden;
@@ -182,11 +194,10 @@ header {
     z-index: 0;
     display: grid;
     grid-auto-flow: dense;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     grid-auto-rows: 22rem;
-    padding: 2px;
-    gap: 5px;
-    margin: 5px; }
+    padding: 35px;
+    gap: 5px; }
     .alquileres1 .galeria-alquileres .gallery-item {
       position: inherit;
       overflow: hidden;
@@ -213,8 +224,10 @@ header {
 /* contacto */
 .contact-parent {
   display: flex;
-  padding-bottom: 20px;
-  padding-top: 20px; }
+  padding-bottom: 50px;
+  padding-top: 50px;
+  color: white;
+  font-weight: 500; }
   .contact-parent .contact-child {
     display: flex;
     flex: 1;
@@ -271,60 +284,71 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #bde0fe; }
+    background-color: rgba(0, 0, 0, 0.521); }
 
 /* fin contacto */
 /* conocenos */
-.cuadrados {
+main .background {
+  background: #0a0a0a;
+  background: linear-gradient(to right, rgba(5, 5, 5, 0.849), rgba(109, 109, 111, 0.376)), url(https://fondosmil.com/fondo/60032.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative; }
+
+main .cuadrados {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center; }
-  .cuadrados .formato-p {
+  main .cuadrados .formato-p {
     font-family: 'Comfortaa', cursive;
-    font-size: 20px; }
-  .cuadrados .cuadrado1 {
-    background-color: #6a93cb;
-    background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+    font-size: 20px;
+    font-weight: 800;
+    color: white; }
+  main .cuadrados .cuadrado1 {
+    background-color: rgba(0, 106, 255, 0.308);
+    background-image: linear-gradient(315deg, rgba(68, 67, 67, 0.767), rgba(10, 11, 12, 0.25) 74%);
     line-height: 1.6;
-    border: black;
-    border-style: solid;
     width: 100%;
     height: 40%;
     display: inline;
     margin: 15px;
-    border-radius: 50px 100px; }
-  .cuadrados .cuadrado3 {
+    border-radius: 30px; }
+  main .cuadrados .cuadrado3 {
     display: inline-block;
-    border: black;
-    border-style: solid;
     padding: 10px;
     margin: 10px;
     text-align: center;
-    background-color: #6a93cb;
-    background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
     font-family: 'Comfortaa', cursive; }
-    .cuadrados .cuadrado3 h2 {
+    main .cuadrados .cuadrado3 span {
       font-family: 'Comfortaa', cursive;
-      font-size: 20px; }
+      font-size: 20px;
+      background-color: rgba(0, 0, 0, 0.493);
+      color: white;
+      width: 60%;
+      margin: auto;
+      border-radius: 10px;
+      padding: 10px;
+      font-weight: 800; }
+    main .cuadrados .cuadrado3 img {
+      width: 90%;
+      margin-top: 20px;
+      border-radius: 20px; }
 
 /* fin conocenos */
 footer {
   width: 100%;
   padding: 50px 0px;
   background-size: cover;
-  background-color: #b9e0f1;
-  -webkit-mask-image: url("../Images/background-footer.svg");
-  mask-image: url("../Images/background-footer.svg");
-  -webkit-mask-size: cover;
-  mask-size: cover; }
+  background-color: #092546f7; }
   footer .container-footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-    margin-top: 100px; }
+    margin-top: 10px; }
     footer .container-footer .box-footer {
       display: flex;
       flex-direction: column;
@@ -333,7 +357,7 @@ footer {
         text-decoration: none; }
       footer .container-footer .box-footer a {
         margin-top: 10px;
-        color: black;
+        color: white;
         font-weight: 600;
         text-decoration: none; }
         footer .container-footer .box-footer a:hover {
@@ -342,13 +366,13 @@ footer {
           font-size: 20px; }
       footer .container-footer .box-footer h2 {
         margin-bottom: 30px;
-        color: black;
+        color: white;
         font-weight: 700; }
       footer .container-footer .box-footer .terminos {
         max-width: 350px;
         margin-top: 20px;
         font-weight: 500;
-        color: black;
+        color: white;
         font-size: 12px; }
         footer .container-footer .box-footer .terminos p {
           text-align: center;
@@ -371,11 +395,11 @@ footer {
       padding: 0px 40px; }
       footer .container-footer .box-copyright p {
         margin-top: 20px;
-        color: black; }
+        color: white; }
       footer .container-footer .box-copyright hr {
         border: none;
         height: 1px;
-        color: black; }
+        color: white; }
 
 /* fin footer */
 .cartas {
@@ -385,25 +409,48 @@ footer {
   padding: 10px;
   font-family: 'Comfortaa', cursive; }
   .cartas .card {
-    background-color: #bde0fe;
-    padding: 5px;
-    text-align: center; }
+    background-color: #18303da6;
+    padding: 25px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 0px,0px,30px,30px;
+    font-weight: 800;
+    color: white; }
+    .cartas .card h5 {
+      background-color: #1a98d5cc;
+      width: 50%;
+      margin: auto;
+      line-height: 2;
+      border-radius: 15px; }
     .cartas .card img {
       width: 100%;
-      height: 100%;
+      height: 330px;
+      object-fit: cover; }
+    .cartas .card .card-img-top {
+      width: 100%;
+      height: 330px;
       object-fit: cover; }
 
 /* propiedad */
+.background-propiedades {
+  background: #0a0a0a;
+  background: linear-gradient(to right, rgba(5, 5, 5, 0.849), rgba(109, 109, 111, 0.376)), url(https://www.diariojunio.com.ar/fotos/foto0_1_108941_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative; }
+
 .galeria-propiedad {
   display: grid;
   justify-content: center;
   grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   grid-auto-rows: auto;
-  padding: 2px;
+  padding: 30px;
   gap: 5px;
-  margin: 15px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px; }
   .galeria-propiedad .gallery-propiedad {
     display: flex;
     flex-direction: row;
@@ -415,15 +462,13 @@ footer {
     box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
     background-color: #6a93cb;
     background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
-    line-height: 1.6;
-    border: black;
-    border-style: solid;
     border-radius: 40px 50px;
     width: 100%;
     height: 100%;
     display: inline-block;
-    margin: 5px;
     padding: 15px; }
+    .galeria-propiedad .gallery-propiedad .color-propiedad {
+      background-color: #023047; }
     .galeria-propiedad .gallery-propiedad iframe {
       border-radius: 15px; }
   .galeria-propiedad .descripcion {
@@ -431,23 +476,25 @@ footer {
 
 /* responsive- mediaquery */
 @media only screen and (max-width: 768px) {
-  .cuadrados {
-    flex-direction: column; }
-    .cuadrados .cuadrado1 {
+  main .cuadrados {
+    flex-direction: column;
+    padding: 25px; }
+    main .cuadrados .formato-p {
+      font-size: 15px; }
+    main .cuadrados .cuadrado2 {
       width: 100%; }
-    .cuadrados .cuadrado2 {
+    main .cuadrados .cuadrado3 {
       width: 100%; }
-    .cuadrados .cuadrado3 {
-      width: 100%; }
-    .cuadrados .cuadrado3 img {
+    main .cuadrados .cuadrado3 img {
       width: 100%; }
   .cartas {
     flex-direction: column;
-    width: 100%; }
+    width: 90%; }
     .cartas .card {
       width: 100%; }
   footer .container-footer .box-footer {
-    padding: 15px; }
+    padding: 15px;
+    margin: auto; }
   header label {
     display: block; }
   header .menu {
@@ -472,12 +519,21 @@ footer {
       position: sticky; }
   .galeria-propiedad {
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     grid-auto-rows: auto;
     padding: 2px;
     gap: 5px;
-    margin: 15px;
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+  .gallery-container {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
+  .galeria-compras {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
+  .alquileres1 .galeria-alquileres {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
+  body .titulo-h2 {
+    width: 90%; }
+  .contact-parent .child2 {
+    color: black; } }
 
 @media screen and (max-width: 991px) {
   .contact-parent {
