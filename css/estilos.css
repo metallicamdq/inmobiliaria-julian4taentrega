@@ -341,7 +341,7 @@ main .cuadrados {
 /* fin conocenos */
 footer {
   width: 100%;
-  padding: 50px 0px;
+  padding: 1px;
   background-size: cover;
   background-color: #092546f7; }
   footer .container-footer {
@@ -491,6 +491,10 @@ footer {
       width: 100%; }
     main .cuadrados .cuadrado3 img {
       width: 100%; }
+  main .carousel-control-next .carousel-control-next-icon {
+    width: 0px; }
+  main .carousel-control-prev .carousel-control-prev-icon {
+    width: 0px; }
   .cartas {
     flex-direction: column;
     width: 90%; }
@@ -502,7 +506,7 @@ footer {
     position: absolute;
     background: #023047;
     margin-left: -70%;
-    transition: all 1s; }
+    transition: all 1.5s; }
     header .menu ul {
       flex-direction: column;
       width: 100%; }
@@ -513,8 +517,8 @@ footer {
   .gallery-title {
     position: sticky; }
   /*galeria de propiedad */
-  .galeria-propiedad {
-    margin: 0 auto;
+  .background-propiedades .galeria-propiedad {
+    margin: 0;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     grid-auto-rows: auto;
     padding: 2px;
