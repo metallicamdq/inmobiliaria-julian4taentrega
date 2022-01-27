@@ -21,9 +21,11 @@ main {
 
     .cuadrados {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
 
         .formato-p {
             font-family: 'Comfortaa', cursive;

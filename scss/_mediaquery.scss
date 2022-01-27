@@ -61,22 +61,11 @@
         margin: 0;
     }
 
-    .gallery-item {
-        position: inherit;
-
-        .gallery-title {
-            position: sticky;
-        }
+    .gallery-title {
+        position: sticky;
     }
 
-    .gallery-item {
-        position: inherit;
-
-        .gallery-title {
-            position: sticky;
-        }
-    }
-
+    /*galeria de propiedad */
     .galeria-propiedad {
         margin: 0 auto;
         grid-template-columns: repeat(auto-fill, minmax(min(15rem), 1fr));
@@ -86,19 +75,49 @@
         padding-bottom: 20px;
     }
 
+    /*galeria del index */
     .gallery-container {
         grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+        .gallery-item {
+            position: inherit;
+
+            .gallery-title {
+                position: sticky;
+            }
+        }
+
     }
 
+    /*galeria de compras */
     .galeria-compras {
         grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+        .gallery-item {
+            position: inherit;
+        }
+
+        .gallery-title {
+            position: sticky;
+        }
     }
 
+
+    /*galeria del alquileres */
     .alquileres1 {
         .galeria-alquileres {
             grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+            .gallery-item {
+                position: inherit;
+            }
+
+            .gallery-title {
+                position: sticky;
+            }
         }
     }
+
 
     body {
         .titulo-h2 {
@@ -111,6 +130,7 @@
             color: black;
         }
     }
+
     footer {
         .container-footer {
             .box-footer {
@@ -120,43 +140,45 @@
         }
     }
 
-}
 
-@media screen and (max-width:991px) {
-    .contact-parent {
-        display: block;
-        width: 100%;
 
-        .child1 {
-            display: none;
+    @media screen and (max-width:991px) {
+        .contact-parent {
+            display: block;
+            width: 100%;
+            color: black;
+
+            .child1 {
+                display: none;
+            }
+
+            .child2 {
+                background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
+                background-size: cover;
+            }
         }
 
-        .child2 {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
-            background-size: cover;
+        .inside-contact input,
+        .inside-contact textarea {
+            background-color: #fff;
         }
     }
 
-    .inside-contact input,
-    .inside-contact textarea {
-        background-color: #fff;
-    }
-}
+    @media only screen and (max-width: 1024px) {
+        .cuadrados {
+            flex-direction: column;
 
-@media only screen and (max-width: 1024px) {
-    .cuadrados {
-        flex-direction: column;
+            .cuadrado1 {
+                width: 100%;
+            }
 
-        .cuadrado1 {
-            width: 100%;
-        }
+            .cuadrado2 {
+                width: 100%;
+            }
 
-        .cuadrado2 {
-            width: 100%;
-        }
-
-        .cuadrado3 {
-            width: 100%;
+            .cuadrado3 {
+                width: 100%;
+            }
         }
     }
 }
