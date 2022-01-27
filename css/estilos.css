@@ -438,14 +438,20 @@ footer {
       border-color: #ffffff; }
 
 /* propiedad */
-.background-propiedades {
+main .carousel-control-next .carousel-control-next-icon {
+  width: 0px; }
+
+main .carousel-control-prev .carousel-control-prev-icon {
+  width: 0px; }
+
+main .background-propiedades {
   background: #0a0a0a;
   background: linear-gradient(to right, rgba(5, 5, 5, 0.849), rgba(109, 109, 111, 0.376)), url(https://www.diariojunio.com.ar/fotos/foto0_1_108941_1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative; }
-  .background-propiedades .galeria-propiedad {
+  main .background-propiedades .galeria-propiedad {
     display: grid;
     justify-content: center;
     grid-auto-flow: dense;
@@ -456,7 +462,7 @@ footer {
     padding-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px; }
-    .background-propiedades .galeria-propiedad .gallery-propiedad {
+    main .background-propiedades .galeria-propiedad .gallery-propiedad {
       display: flex;
       flex-direction: row;
       justify-items: center;
@@ -472,11 +478,11 @@ footer {
       height: 100%;
       display: inline-block;
       padding: 15px; }
-      .background-propiedades .galeria-propiedad .gallery-propiedad .color-propiedad {
+      main .background-propiedades .galeria-propiedad .gallery-propiedad .color-propiedad {
         background-color: #023047; }
-      .background-propiedades .galeria-propiedad .gallery-propiedad iframe {
+      main .background-propiedades .galeria-propiedad .gallery-propiedad iframe {
         border-radius: 15px; }
-    .background-propiedades .galeria-propiedad .descripcion {
+    main .background-propiedades .galeria-propiedad .descripcion {
       align-self: center; }
 
 /* responsive- mediaquery */

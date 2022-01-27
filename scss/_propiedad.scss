@@ -1,7 +1,7 @@
 /* propiedad */
 @mixin cuadrados {
     background-color: #6a93cb;
-    background-image: linear-gradient(315deg, #0d3a78 0%, #a4bfef 74%);     
+    background-image: linear-gradient(315deg, #0d3a78 0%, #a4bfef 74%);
     border-radius: 40px 50px;
     width: 100%;
     height: 100%;
@@ -9,47 +9,61 @@
     padding: 15px;
 }
 
-.background-propiedades {
-    background: #0a0a0a;
-    background: linear-gradient(to right, hsla(0, 0%, 2%, 0.849), hsla(240, 1%, 43%, 0.376)), url(https://www.diariojunio.com.ar/fotos/foto0_1_108941_1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-    .galeria-propiedad {
-        display: grid;
-        justify-content: center;
-        grid-auto-flow: dense;
-        grid-template-columns: repeat(auto-fill, minmax(min(30rem), 1fr));
-        grid-auto-rows: auto;
-        padding: 30px;
-        gap: 5px;
-        padding-bottom: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-    
-        .gallery-propiedad {
-            display: flex;
-            flex-direction: row;
-            justify-items: center;
-            position: relative;
-            overflow: hidden;
-            transition: all 500ms ease;
-            border-radius: 5px;
-            box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50);
-            .color-propiedad{
-                background-color: $bg_nav;
-            }
-    
-            iframe {
-                border-radius: 15px;
-            }
-    
-            @include cuadrados;
+main {
+    .carousel-control-next{
+        .carousel-control-next-icon{
+            width: 0px;
         }
-    
-        .descripcion {
-            align-self: center;
+    }
+    .carousel-control-prev{
+        .carousel-control-prev-icon{
+            width: 0px;
+        }
+    }
+    .background-propiedades {
+        background: #0a0a0a;
+        background: linear-gradient(to right, hsla(0, 0%, 2%, 0.849), hsla(240, 1%, 43%, 0.376)), url(https://www.diariojunio.com.ar/fotos/foto0_1_108941_1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+
+        .galeria-propiedad {
+            display: grid;
+            justify-content: center;
+            grid-auto-flow: dense;
+            grid-template-columns: repeat(auto-fill, minmax(min(30rem), 1fr));
+            grid-auto-rows: auto;
+            padding: 30px;
+            gap: 5px;
+            padding-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            .gallery-propiedad {
+                display: flex;
+                flex-direction: row;
+                justify-items: center;
+                position: relative;
+                overflow: hidden;
+                transition: all 500ms ease;
+                border-radius: 5px;
+                box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50);
+
+                .color-propiedad {
+                    background-color: $bg_nav;
+                }
+
+                iframe {
+                    border-radius: 15px;
+                }
+
+                @include cuadrados;
+            }
+
+            .descripcion {
+                align-self: center;
+            }
         }
     }
 }
