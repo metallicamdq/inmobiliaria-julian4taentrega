@@ -309,7 +309,8 @@ main .cuadrados {
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
     font-weight: 800;
-    color: white; }
+    color: white;
+    text-align: justify; }
   main .cuadrados .cuadrado1 {
     background-color: rgba(0, 106, 255, 0.308);
     background-image: linear-gradient(315deg, rgba(68, 67, 67, 0.767), rgba(10, 11, 12, 0.25) 74%);
@@ -325,6 +326,15 @@ main .cuadrados {
     margin: 10px;
     text-align: center;
     font-family: 'Comfortaa', cursive; }
+    main .cuadrados .cuadrado3 .caja-imagenes {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      main .cuadrados .cuadrado3 .caja-imagenes img {
+        width: 33%;
+        margin-top: 20px;
+        border-radius: 20px; }
     main .cuadrados .cuadrado3 span {
       font-family: 'Comfortaa', cursive;
       font-size: 20px;
@@ -335,10 +345,6 @@ main .cuadrados {
       border-radius: 10px;
       padding: 10px;
       font-weight: 800; }
-    main .cuadrados .cuadrado3 img {
-      width: 90%;
-      margin-top: 20px;
-      border-radius: 20px; }
 
 /* fin conocenos */
 footer {
@@ -380,7 +386,8 @@ footer {
         font-size: 12px; }
         footer .container-footer .box-footer .terminos p {
           text-align: center;
-          justify-content: center; }
+          justify-content: center;
+          text-align: justify; }
       footer .container-footer .box-footer .logo {
         display: flex;
         justify-content: center; }
@@ -504,8 +511,11 @@ main .background-propiedades {
         width: 100%; }
       main .cuadrados .cuadrado3 {
         width: 100%; }
-      main .cuadrados .cuadrado3 img {
-        width: 100%; }
+        main .cuadrados .cuadrado3 .caja-imagenes {
+          flex-direction: column;
+          width: 100%; }
+          main .cuadrados .cuadrado3 .caja-imagenes img {
+            width: 100%; }
     main .carousel-control-next .carousel-control-next-icon {
       width: 0px; }
     main .carousel-control-prev .carousel-control-prev-icon {

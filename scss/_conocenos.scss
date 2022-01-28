@@ -12,7 +12,7 @@
 main {
     .background {
         background: #0a0a0a;
-        background: linear-gradient(to right, hsla(0, 0%, 2%, 0.849), hsla(240, 1%, 43%, 0.376)),url(https://fondosmil.com/fondo/60032.jpg);
+        background: linear-gradient(to right, hsla(0, 0%, 2%, 0.849), hsla(240, 1%, 43%, 0.376)), url(https://fondosmil.com/fondo/60032.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -32,6 +32,7 @@ main {
             font-size: 20px;
             font-weight: 800;
             color: white;
+            text-align: justify;
 
         }
 
@@ -47,6 +48,18 @@ main {
             text-align: center;
             font-family: 'Comfortaa', cursive;
 
+            .caja-imagenes {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                img {
+                    width: 33%;
+                    margin-top: 20px;
+                    border-radius: 20px;
+                }
+            }
+
             span {
                 font-family: 'Comfortaa', cursive;
                 font-size: 20px;
@@ -58,11 +71,7 @@ main {
                 padding: 10px;
                 font-weight: 800;
             }
-            img{
-                width: 90%;
-                margin-top: 20px;
-                border-radius: 20px;
-            }
+
         }
 
     }

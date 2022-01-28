@@ -16,11 +16,15 @@
 
             .cuadrado3 {
                 width: 100%;
+                .caja-imagenes{
+                    flex-direction: column;
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
             }
 
-            .cuadrado3 img {
-                width: 100%;
-            }
         }
 
         .carousel-control-next {
