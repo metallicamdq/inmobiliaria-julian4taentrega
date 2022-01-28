@@ -75,7 +75,8 @@ body {
 header {
   width: 100%;
   background: #092546f7;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1rem; }
   header nav {
     z-index: 99; }
@@ -471,6 +472,8 @@ main .background-propiedades {
       transition: all 500ms ease;
       border-radius: 5px;
       box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
       background-color: #6a93cb;
       background-image: linear-gradient(315deg, #0d3a78 0%, #a4bfef 74%);
       border-radius: 40px 50px;
@@ -487,26 +490,66 @@ main .background-propiedades {
 
 /* responsive- mediaquery */
 @media only screen and (max-width: 768px) {
-  main .cuadrados {
-    flex-direction: column;
-    padding: 25px; }
-    main .cuadrados .formato-p {
-      font-size: 15px; }
-    main .cuadrados .cuadrado2 {
-      width: 100%; }
-    main .cuadrados .cuadrado3 {
-      width: 100%; }
-    main .cuadrados .cuadrado3 img {
-      width: 100%; }
-  main .carousel-control-next .carousel-control-next-icon {
-    width: 0px; }
-  main .carousel-control-prev .carousel-control-prev-icon {
-    width: 0px; }
-  .cartas {
-    flex-direction: column;
-    width: 90%; }
-    .cartas .card {
-      width: 100%; }
+  main {
+    /*galeria de propiedad */
+    /*galeria del index */
+    /*galeria de compras */
+    /*galeria del alquileres */ }
+    main .cuadrados {
+      flex-direction: column;
+      padding: 25px; }
+      main .cuadrados .formato-p {
+        font-size: 15px; }
+      main .cuadrados .cuadrado2 {
+        width: 100%; }
+      main .cuadrados .cuadrado3 {
+        width: 100%; }
+      main .cuadrados .cuadrado3 img {
+        width: 100%; }
+    main .carousel-control-next .carousel-control-next-icon {
+      width: 0px; }
+    main .carousel-control-prev .carousel-control-prev-icon {
+      width: 0px; }
+    main .galeria-propiedad {
+      grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+      margin: 10px; }
+    main .cartas {
+      flex-direction: column;
+      width: 90%; }
+      main .cartas .card {
+        width: 100%; }
+    main .gallery-title {
+      position: sticky; }
+    main .background-propiedades .galeria-propiedad {
+      margin: 0;
+      grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+      grid-auto-rows: auto;
+      padding: 2px;
+      gap: 5px;
+      padding-bottom: 20px; }
+    main .gallery-container {
+      grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
+      main .gallery-container .gallery-item {
+        position: inherit; }
+        main .gallery-container .gallery-item .gallery-title {
+          position: sticky; }
+    main .galeria-compras {
+      grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
+      main .galeria-compras .gallery-item {
+        position: inherit; }
+      main .galeria-compras .gallery-title {
+        position: sticky; }
+    main .alquileres1 .galeria-alquileres {
+      grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
+      main .alquileres1 .galeria-alquileres .gallery-item {
+        position: inherit; }
+      main .alquileres1 .galeria-alquileres .gallery-title {
+        position: sticky; }
+    main .contact-parent .child2 {
+      color: black; }
+  footer .container-footer .box-footer {
+    padding: 30px;
+    margin: 0; }
   header label {
     display: block; }
   header .menu {
@@ -519,48 +562,12 @@ main .background-propiedades {
       width: 100%; }
       header .menu ul li {
         border-top: 1px solid #fff; }
-  #btn-menu:checked ~ .menu {
+  header #btn-menu:checked ~ .menu {
     margin: 0; }
-  .gallery-title {
-    position: sticky; }
-  /*galeria de propiedad */
-  .background-propiedades .galeria-propiedad {
-    margin: 0;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    grid-auto-rows: auto;
-    padding: 2px;
-    gap: 5px;
-    padding-bottom: 20px; }
-  /*galeria del index */
-  .gallery-container {
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
-    .gallery-container .gallery-item {
-      position: inherit; }
-      .gallery-container .gallery-item .gallery-title {
-        position: sticky; }
-  /*galeria de compras */
-  .galeria-compras {
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
-    .galeria-compras .gallery-item {
-      position: inherit; }
-    .galeria-compras .gallery-title {
-      position: sticky; }
-  /*galeria del alquileres */
-  .alquileres1 .galeria-alquileres {
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
-    .alquileres1 .galeria-alquileres .gallery-item {
-      position: inherit; }
-    .alquileres1 .galeria-alquileres .gallery-title {
-      position: sticky; }
   body .titulo-h2 {
-    width: 90%; }
-  .contact-parent .child2 {
-    color: black; }
-  footer .container-footer .box-footer {
-    padding: 15px;
-    margin: 0; } }
+    width: 90%; } }
 
-@media only screen and (max-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .contact-parent {
     display: block;
     width: 100%;
@@ -574,7 +581,7 @@ main .background-propiedades {
   .inside-contact textarea {
     background-color: #fff; } }
 
-@media only screen and (max-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .cuadrados {
     flex-direction: column; }
     .cuadrados .cuadrado1 {

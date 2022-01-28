@@ -22,28 +22,107 @@
                 width: 100%;
             }
         }
-        .carousel-control-next{
-            .carousel-control-next-icon{
+
+        .carousel-control-next {
+            .carousel-control-next-icon {
                 width: 0px;
             }
         }
-        .carousel-control-prev{
-            .carousel-control-prev-icon{
+
+        .carousel-control-prev {
+            .carousel-control-prev-icon {
                 width: 0px;
             }
         }
+
+        .galeria-propiedad {
+            grid-template-columns: repeat(auto-fill, minmax(min(15rem), 1fr));
+            margin: 10px;
+        }
+
+
+        .cartas {
+            flex-direction: column;
+            width: 90%;
+
+            .card {
+                width: 100%;
+            }
+        }
+
+        .gallery-title {
+            position: sticky;
+        }
+
+        /*galeria de propiedad */
+        .background-propiedades {
+
+            .galeria-propiedad {
+                margin: 0;
+                grid-template-columns: repeat(auto-fill, minmax(min(15rem), 1fr));
+                grid-auto-rows: auto;
+                padding: 2px;
+                gap: 5px;
+                padding-bottom: 20px;
+            }
+        }
+
+        /*galeria del index */
+        .gallery-container {
+            grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+            .gallery-item {
+                position: inherit;
+
+                .gallery-title {
+                    position: sticky;
+                }
+            }
+
+        }
+
+        /*galeria de compras */
+        .galeria-compras {
+            grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+            .gallery-item {
+                position: inherit;
+            }
+
+            .gallery-title {
+                position: sticky;
+            }
+        }
+        /*galeria del alquileres */
+        .alquileres1 {
+            .galeria-alquileres {
+                grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+                .gallery-item {
+                    position: inherit;
+                }
+
+                .gallery-title {
+                    position: sticky;
+                }
+            }
+        }
+        .contact-parent {
+            .child2 {
+                color: black;
+            }
+        }
+
     }
 
-    .cartas {
-        flex-direction: column;
-        width: 90%;
-
-        .card {
-            width: 100%;
+    footer {
+        .container-footer {
+            .box-footer {
+                padding: 30px;
+                margin: 0;
+            }
         }
     }
-
-
 
     header {
         label {
@@ -65,134 +144,55 @@
                 }
             }
         }
-    }
 
-    #btn-menu:checked~.menu {
-        margin: 0;
-    }
-
-    .gallery-title {
-        position: sticky;
-    }
-
-    /*galeria de propiedad */
-    .background-propiedades {
-
-        .galeria-propiedad {
+        #btn-menu:checked~.menu {
             margin: 0;
-            grid-template-columns: repeat(auto-fill, minmax(min(15rem), 1fr));
-            grid-auto-rows: auto;
-            padding: 2px;
-            gap: 5px;
-            padding-bottom: 20px;
         }
     }
-
-    /*galeria del index */
-    .gallery-container {
-        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-
-        .gallery-item {
-            position: inherit;
-
-            .gallery-title {
-                position: sticky;
-            }
-        }
-
-    }
-
-    /*galeria de compras */
-    .galeria-compras {
-        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-
-        .gallery-item {
-            position: inherit;
-        }
-
-        .gallery-title {
-            position: sticky;
-        }
-    }
-
-
-    /*galeria del alquileres */
-    .alquileres1 {
-        .galeria-alquileres {
-            grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-
-            .gallery-item {
-                position: inherit;
-            }
-
-            .gallery-title {
-                position: sticky;
-            }
-        }
-    }
-
 
     body {
         .titulo-h2 {
             width: 90%;
         }
     }
+}
 
+@media screen and (max-width:991px) {
     .contact-parent {
+        display: block;
+        width: 100%;
+        color: black;
+
+        .child1 {
+            display: none;
+        }
+
         .child2 {
-            color: black;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
+            background-size: cover;
         }
     }
 
-    footer {
-        .container-footer {
-            .box-footer {
-                padding: 15px;
-                margin: 0;
-            }
-        }
+    .inside-contact input,
+    .inside-contact textarea {
+        background-color: #fff;
     }
+}
 
+@media only screen and (max-width: 1024px) {
+    .cuadrados {
+        flex-direction: column;
 
-
-    @media screen and (max-width:991px) {
-        .contact-parent {
-            display: block;
+        .cuadrado1 {
             width: 100%;
-            color: black;
-
-            .child1 {
-                display: none;
-            }
-
-            .child2 {
-                background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("https://cdn.pixabay.com/photo/2019/06/28/00/17/architecture-4303279_1280.jpg");
-                background-size: cover;
-            }
         }
 
-        .inside-contact input,
-        .inside-contact textarea {
-            background-color: #fff;
+        .cuadrado2 {
+            width: 100%;
+        }
+
+        .cuadrado3 {
+            width: 100%;
         }
     }
-
-    @media only screen and (max-width: 1024px) {
-        .cuadrados {
-            flex-direction: column;
-
-            .cuadrado1 {
-                width: 100%;
-            }
-
-            .cuadrado2 {
-                width: 100%;
-            }
-
-            .cuadrado3 {
-                width: 100%;
-            }
-        }
-    }
-
 }

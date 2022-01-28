@@ -10,16 +10,18 @@
 }
 
 main {
-    .carousel-control-next{
-        .carousel-control-next-icon{
+    .carousel-control-next {
+        .carousel-control-next-icon {
             width: 0px;
         }
     }
-    .carousel-control-prev{
-        .carousel-control-prev-icon{
+
+    .carousel-control-prev {
+        .carousel-control-prev-icon {
             width: 0px;
         }
     }
+
     .background-propiedades {
         background: #0a0a0a;
         background: linear-gradient(to right, hsla(0, 0%, 2%, 0.849), hsla(240, 1%, 43%, 0.376)), url(https://www.diariojunio.com.ar/fotos/foto0_1_108941_1.jpg);
@@ -49,6 +51,8 @@ main {
                 transition: all 500ms ease;
                 border-radius: 5px;
                 box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50);
+                font-family: 'Poppins', sans-serif;
+                font-weight: 800;
 
                 .color-propiedad {
                     background-color: $bg_nav;
